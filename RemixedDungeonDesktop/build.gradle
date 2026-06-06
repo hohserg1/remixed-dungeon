@@ -150,6 +150,7 @@ tasks.register('runDesktopGame', JavaExec) {
     if (project.hasProperty('args')) {
         args = project.property('args').toString().split(' ')
     }
+    args = args << "--windowed"
 
     jvmArgs = ["--add-opens", "java.base/java.util=ALL-UNNAMED", "-Dhttps.protocols=TLSv1.2"]
 
