@@ -25,4 +25,7 @@ node_modules/
 # Editors
 .vscode/
 .idea/
+
+.gradle/
+.profileconfig.json
 ```
