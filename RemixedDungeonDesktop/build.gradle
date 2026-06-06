@@ -322,22 +322,24 @@ tasks.register('extractJdks') {
         jdkUrls.each { platform, url ->
             def archiveFile = new File(jdkDownloadDir, "${platform}.${url.endsWith('.zip') ? 'zip' : 'tar.gz'}")
             def outputDir = new File(jdkDownloadDir, platform)
-            outputDir.mkdirs()
+            if (!outputDir.exists()) {
+                outputDir.mkdirs()
 
-            if (archiveFile.exists()) {
-                if (archiveFile.name.endsWith('.zip')) {
-                    copy {
-                        from zipTree(archiveFile)
-                        into outputDir
-                        fileMode 0755
+                if (archiveFile.exists()) {
+                    if (archiveFile.name.endsWith('.zip')) {
+                        copy {
+                            from zipTree(archiveFile)
+                            into outputDir
+                            fileMode 0755
+                        }
+                    } else if (archiveFile.name.endsWith('.tar.gz')) {
+                        exec {
+                            commandLine 'tar', '-xzf', archiveFile, '-C', outputDir
+                        }
                     }
-                } else if (archiveFile.name.endsWith('.tar.gz')) {
-                    exec {
-                        commandLine 'tar', '-xzf', archiveFile, '-C', outputDir
-                    }
+                } else {
+                    logger.warn("Archive for ${platform} does not exist at ${archiveFile}")
                 }
-            } else {
-                logger.warn("Archive for ${platform} does not exist at ${archiveFile}")
             }
         }
     }
