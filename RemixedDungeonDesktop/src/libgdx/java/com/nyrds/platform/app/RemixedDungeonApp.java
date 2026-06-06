@@ -79,6 +79,7 @@ public class RemixedDungeonApp {
                 StringWriter stringWriter = new StringWriter();
                 PrintWriter printWriter = new PrintWriter(stringWriter);
                 throwable.printStackTrace(printWriter);
+                throwable.printStackTrace();
                 String stackTrace = stringWriter.toString();
 
                 javax.swing.SwingUtilities.invokeLater(() -> {

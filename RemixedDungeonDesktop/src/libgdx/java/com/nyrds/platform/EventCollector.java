@@ -101,6 +101,7 @@ public class EventCollector {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PrintStream ps = new PrintStream(baos);
         e.printStackTrace(ps);
+        e.printStackTrace();
         ps.close();
         String trace = baos.toString();
 
