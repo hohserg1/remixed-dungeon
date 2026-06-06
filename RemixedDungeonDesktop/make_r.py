@@ -50,24 +50,33 @@ strings_files = ['RemixedDungeon/src/main/res/values/strings_not_translate.xml',
                  'RemixedDungeon/src/main/res/values/strings_api_signature.xml',
                  'RemixedDungeon/src/main/res/values/string_arrays.xml',
                  'RemixedDungeon/src/main/res/values/strings_all.xml']
+sourceTime = 0
 
 for file in strings_files:
-    pfile = ElementTree.parse('../' + file).getroot()
+    sourceTime = max(sourceTime, os.path.getmtime('../' + file))
 
-    for entry in pfile:
-        if entry.tag not in ["string", "string-array"]:
-            continue
+generatedTime = os.path.getmtime('src/libgdx/java/com/nyrds/pixeldungeon/ml/R.java')
 
-        entry_name = entry.get("name")
-        if entry.tag == 'string':
-            r_strings.add(entry_name)
-
-        if entry.tag == 'string-array':
-            d_arrays[entry_name] = []
-            for e in entry:
-                d_arrays[entry_name].append(e.text.replace("@string/", ""))
-
-            r_arrays.add(entry_name)
 print("Making R.java")
-makeRJava(r_strings, r_arrays)
-print("Done")
+if(generatedTime > sourceTime):
+    print("skipped")
+else:
+    for file in strings_files:
+        pfile = ElementTree.parse('../' + file).getroot()
+
+        for entry in pfile:
+            if entry.tag not in ["string", "string-array"]:
+                continue
+
+            entry_name = entry.get("name")
+            if entry.tag == 'string':
+                r_strings.add(entry_name)
+
+            if entry.tag == 'string-array':
+                d_arrays[entry_name] = []
+                for e in entry:
+                    d_arrays[entry_name].append(e.text.replace("@string/", ""))
+
+                r_arrays.add(entry_name)
+    makeRJava(r_strings, r_arrays)
+    print("Done")
