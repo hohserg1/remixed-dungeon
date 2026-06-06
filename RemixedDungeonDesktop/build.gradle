@@ -348,6 +348,8 @@ tasks.register('extractJdks') {
 tasks.register('minimizeJdks') {
     dependsOn 'extractJdks'
     doLast {
+        def osName = System.getProperty("os.name")
+        def jdkOSosName = osName.containsIgnoreCase("windows") ? "windows" : osName.containsIgnoreCase("mac") ? "mac" : "linux"
         jdkUrls.each { platform, url ->
             def jdkDir = new File(jdkDownloadDir, platform).listFiles().find { it.name.startsWith('jdk') }
             def minimizedJdkDir = new File(jdkMinimizedDir, platform)
@@ -356,7 +358,7 @@ tasks.register('minimizeJdks') {
             }
 
             exec {
-                commandLine "${jdkDownloadDir}/linux/jdk-17.0.14+7/bin/jlink",
+                commandLine "${jdkDownloadDir}/${jdkOSosName}/jdk-17.0.14+7/bin/jlink${jdkOSosName.equals("windows") ? ".exe" : ""}",
                         '--module-path', "${jdkDir}/jmods",
                         '--add-modules', 'java.base,java.compiler,java.desktop,java.scripting,java.sql,jdk.unsupported,jdk.crypto.ec',
                         '--output', minimizedJdkDir,
