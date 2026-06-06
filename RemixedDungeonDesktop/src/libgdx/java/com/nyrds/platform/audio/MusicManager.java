@@ -53,6 +53,7 @@ public enum MusicManager {
 
             try {
                 music = Gdx.audio.newMusic(FileSystem.getInternalStorageFileHandle(assetFilename));
+                music.setVolume(0);
                 music.setLooping(looping);
                 volume(1);
                 music.play();
