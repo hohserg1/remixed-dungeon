@@ -52,6 +52,7 @@ Akármikor megváltoztathatod a döntésedet erről ( Klikkelj a diagram ikonra 
     <string name="AmokArrow_Name">Amok Nyíl</string>
     <string name="AmokBuff_Info">Érezd az amokot, elveszve azokat, akik szerencsétlenek!</string>
     <string name="AmokBuff_Name">Örjöngés</string>
+    <string name="AmokDart_Gender">masculine</string>
     <string name="AmokDart_Info">A vegyület a dobónyíl végén bárkit eszméletlen, kegyetlen örjöngővé vált.</string>
     <string name="AmokDart_Name">Amok dobónyíl</string>
     <string name="AmuletScene_Exit">Mára elég volt</string>
@@ -289,6 +290,7 @@ Akármikor megváltoztathatod a döntésedet erről ( Klikkelj a diagram ikonra 
     <string name="Bleeding_Death">Elvéreztél...</string>
     <string name="BlessedBuff_Info">A pontosság és a kitérés szálljon azokra, akiket megérintett az áldás!</string>
     <string name="BlessedBuff_Name">Megáldott</string>
+    <string name="BlindnessBuff_Info">Teljes vakság, csak a körülötte lévő hangok hallhatók.</string>
     <string name="BlindnessBuff_Name">Megvakult</string>
     <string name="BloodTransfusion_FullHP">A véred már teljesen tele van.</string>
     <string name="BloodTransfusion_Info">A céltól szinte minden vérmennyiséget elvesz magának, hogy gyógyuljon. Egy sötét szertartás, az áldozat és a megmaradás rituáléja.</string>
@@ -351,6 +353,7 @@ Akármikor megváltoztathatod a döntésedet erről ( Klikkelj a diagram ikonra 
     <string name="Carcass_Info">maradványai teljesen elpusztultak: %s</string>
     <string name="Carcass_Kick">Ez a(z) %s teljesen halott, nincs értelme rugdosni.</string>
     <string name="Carcass_Name">%s maradványai</string>
+    <string name="Carcass_Necromancy">Feltámasztottad a %s holt testét!</string>
     <string name="Carcass_Necromancy_Failed">A(z) %s holttestének feltámasztási kísérleted sikertelen!</string>
     <string name="Carcass_TooFarToDissect">Közelebb kell menned a tetemhez, hogy boncolhasd.</string>
     <string name="Caves_TileDescBookshelf">Minek kéne neked egy könyvespolc egy bányába?</string>
@@ -623,6 +626,7 @@ Nem... nincs számára hely a fényben... nincs többé. Elfordult a gyenge fén
     <string name="DeepSnail_Desc">Ez a csigafajta gyakran látható vízforrások közelében, és sokkal gyorsabb, mint az átlagos csiga. Azonban vigyázz a harapásukkal, mert kellemetlen hatással lehetnek a bőrödön.</string>
     <string name="DeepSnail_Gender">masculine</string>
     <string name="DeepSnail_Name_Objective">mély csigát</string>
+    <string name="DeferedDamageBuff_Info">A fájdalom lassító fájdalommá változott, csökkentve az egyszerre vett sebzést.\nHátralévő sebzés: %d</string>
     <string name="DeferedDamageBuff_Name">Elhárített kámasz(%d)</string>
     <string name="DeferedDamage_Killed_Txt">%s megölt téged...</string>
     <string name="DevourBuff_Info"/>
@@ -641,6 +645,7 @@ Nem... nincs számára hely a fényben... nincs többé. Elfordult a gyenge fén
     <string name="DieHardSpell_Info">Ideiglenesen megnöveli a regenerációs képességedet, igazán kemény fickót csinál belőled.</string>
     <string name="DieHardSpell_Name">Kemény halál</string>
     <string name="Displacement_Txt">Áthelyező %s</string>
+    <string name="DoctorArmor_Info">Ez a morbusorvos páncélja lehetővé teszi a \&quot;Miasma-felhő\&quot; képesség használatát, amely mérgező gázt bocsát ki, ami megmérgezi, gyengíti és deszorientezi az ellenségeket. Az orvos, aki a maszkja által védett, immunis ezekre az hatásokra.</string>
     <string name="DoctorArmor_Name">Doktor Ruházat</string>
     <string name="DoctorArmor_NotDoctor">Csak a pestisdoktorok használhatják ezt az páncélt!</string>
     <string name="DoctorSpecial">Miasma Felhő</string>
@@ -665,9 +670,11 @@ Micsoda Maszk! Mennyi Álca! Wow!</string>
     <string name="Drink_ACDrink">IDD MEG</string>
     <string name="Drink_Message">Ez az ital felrissítő volt!</string>
     <string name="DrunkardNPC_Desc">Rendszeres vendég természetes állapotban.</string>
+    <string name="DrunkardNPC_Gender">masculine</string>
     <string name="DrunkardNPC_Name">ivás</string>
     <string name="DrunkardNPC_Name_Objective">betörőt</string>
     <string name="Drunkard_Phrase_1">MÉG TÖBB PIAÁT KÉÉK!</string>
+    <string name="Drunkard_Phrase_2">Kinek kell víz, ha van sör?</string>
     <string name="Drunkard_Phrase_3">Ez a sör így néz ki, mint a por</string>
     <string name="Drunkard_Phrase_4">Zzzzzz...</string>
     <string name="Dungeon_DeadEnd">Mit keresel te itt?!</string>
@@ -745,12 +752,14 @@ Micsoda Maszk! Mennyi Álca! Wow!</string>
     <string name="Eye_Kill">%s halálsugara megölt téged...</string>
     <string name="Eye_Name">gonosz szem</string>
     <string name="Eye_Name_Objective">gonosz szem</string>
+    <string name="Facilitations_Descriptions_0">A mutánsok mindig is megvetéssel és félelemmel vannak kezelve, de az éhség hiánya újra megadja a felső windőt, most a pincék mélyeinek legyőzésében.</string>
     <string name="Facilitations_Descriptions_1">Még mindig nem tudni, hogy kik voltak a szüleid, de a természetes troll-szerű regeneráció segít majd begyógyítani az összes közelgő csata sebeit.</string>
     <string name="Facilitations_Descriptions_2">A természet mint energiaforrás mély és alapos tanulmányozása lehetővé teszi, hogy a varázslatos tartalékaidat feltöltsd az utazás során.</string>
     <string name="Facilitations_Descriptions_3">Meghúzva az ogre bőrből készült övet, amelyet minden új generációra továbbadtak, egy lépést teszel a előtted álló ismeretlen felé.</string>
     <string name="Facilitations_Names_0">Nincs éhezés</string>
     <string name="Facilitations_Names_1">Troll teste</string>
     <string name="Facilitations_Names_2">Genio szellem</string>
+    <string name="Facilitations_Names_3">Óriási erő</string>
     <string name="Fadeleaf_Desc">Egy Fakultlevélhez érve elteleportál bármely lényt egy véletlen helyre az adott szinten.</string>
     <string name="Fadeleaf_Name">Fakultlevél</string>
     <string name="FetidRat_Desc">Ez az erszényes patkány sokkal nagyobb mint a normális példányok. Valami féle felhő veszi körül. </string>
@@ -1400,6 +1409,7 @@ Csak saját felelősségre töltsd le őket; azért jó szórakozást!</string>
     <string name="Monk_Gender">masculine</string>
     <string name="Monk_Name">törp szerzetes</string>
     <string name="Monk_Name_Objective">törp szerzetes</string>
+    <string name="MoongraceBuff_Info">A körülöttünk lévő levegő jobban telítődik meg, ami lehetővé teszi a jobb koncentrációt és a mágikus rezervák feltöltődését.</string>
     <string name="MoongraceBuff_Name">Mennyei manna</string>
     <string name="Moongrace_Desc">Ezeket a növényeket kis számokban lehet látni, természetes varázslatként ismertek.</string>
     <string name="Moongrace_Name">Holdszépség</string>
@@ -1490,6 +1500,7 @@ Csak saját felelősségre töltsd le őket; azért jó szórakozást!</string>
     <string name="PirateSet_Info">Arr! Van elég merszed csatlakozni hozzánk? Vagy te is csak egy szárazföldi patkány vagy? Remélem nem, mert ez csakis kalózoknak való, mármint.. Arr!</string>
     <string name="PirateSet_Name">Kalóz Szett</string>
     <string name="PlagueDoctorMaskHood_Info">Egy faragott ébenfa koponya, üres szemgödrök ragyognak az ametisztkövek éteri csillogásával. Minden lélegzetvétel, amit teszel, susogva halad át egy útvesztőn belüli csöveken és szűrőkön, hordozva az erős fűszerek és fűszernövények illatát, amelyek elmaszkolják a romlottságot, ami hozzád tapad. De ez nem csupán a maszk. Egy nehéz, éjfekete bársony csuklya takarja el arcodat és fejedet az árnyékban. A csuklya, mint egy holló szárnya, leomlik a hátadra, széleit csontfehér hímzett díszekkel díszítik, ami hátborzongatóan szép kontrasztot jelent. Együtt a maszk és a csuklya egy szellemképet hoz létre, egy komor vallomást a romlás elleni véget nem érő harcról.</string>
+    <string name="PlagueDoctorMaskHood_Name">Döghalál-orvos maszk kalappal</string>
     <string name="PlagueDoctorMask_Info">Ez… ez nem csupán egy maszk. Ez… egy pajzs. Egy védelmi vonal a bomlás erői ellen, amelyekkel a Pestisdoktor fáradhatatlanul harcol. A legjobb ébenfából készült, egy dühös koponya arca finoman faragva. Üreges szemüregeit csillogó, ametiszt drágakövek töltik ki, amelyek halványan pulzálnak, mint a tűz haldokló parázsa. Minden egyes lélegzetvételt, minden egyes megszólalást egy labirintusszerű csöveken és szűrőkön hálózat szűr meg. Erőteljes gyógynövények és egzotikus fűszerek keveréke járja át a levegőt, elfedve a halál bűzét, amely úgy tapad rád, mint egy gyászlepel.</string>
     <string name="PlagueDoctorMask_Name">Morbus doktor maszk</string>
     <string name="PlagueDoctorNPC_After_Quest">Megmutatom nekik, Megmutatom nekik mind!</string>
@@ -1514,10 +1525,12 @@ Csak saját felelősségre töltsd le őket; azért jó szórakozást!</string>
     <string name="PlagueDoctorQuest_2_2_Epilogue">Lenyeges! _Napfű_, arany esszenciája vitalitással pulzál. Sokat tanultam már annak finom szerkezetéből. *Kézbesít egy _Életgyógyítót_, folyadéka halvány aranyl_uc colorful secara bercahaya.* Idd ezt, amikor a világ súlyát nehezen érezed, és érezd, hogyan a nap melegéd megújítja a lelkedet.</string>
     <string name="PlagueDoctorQuest_2_2_InProgress">_Due semi di erba del sole_. Le loro petali dorati contengono un potere che cerco di comprendere. Trovali, e lascia che la loro essenza venga rivelata!</string>
     <string name="PlagueDoctorQuest_2_2_Prologue">*A szemében furcsa, lázadó intenzitás villan* Á, a _napfű_! Egy ínyadt virág, szirmai közben a nap melegét sugározzák. Úgy gondolom, az esszenciája tartalmazza a megoldást... ám hagyjuk, kihagyjuk a részleteket most. Elegendő tudni, hogy kutatásomhoz elengedhetetlen. _Két napfű mag_. Szerezd meg nekem, és jutalmazni foglak valamivel, ami biztosan hasznos lesz a kalandjaidon - egy _Egészség potion_-nal, amely tele van a nap erejével.</string>
+    <string name="PlagueDoctorQuest_3_1_Epilogue">*Kezében keskeny keztyűs kezében egy _denevért_ fogad meg óvatosan, azt a kicsi alakot szokatlan fesztetéssel vizsgálva* Csodálatos! A denevér echolokációja… olyan, amilyet még sosem találkoztam. Ilyen pontosság… ilyen… kontroll. *Odanyúl a maszkja alá, arcát rejtve* A te töreidért egy _Fejezfejlesztési Pergamen_. Használd bölcsén, mert képes… megformálni a te lényedet. *Odaadja a pergamént, hangja halk sóhajra csökken* Ez a _denevér_... egy ablak egy rejtett világba. Egy világ... ahol az árnyak táncolnak és a titkok sussognak.</string>
     <string name="PlagueDoctorQuest_3_1_InProgress">Hozzál nekem egy _vámpírmurat_, élve és sértetlenül! A vérét, a szárnyait... titkokat rejt, amelyeket feltájni kell!</string>
     <string name="PlagueDoctorQuest_3_1_Prologue">*A szemében furcsa, lázadt intenzitás türel* Ah, a _vámpír denevér_! Az éjszaka lénye, amely a prédájának életenergiáját élvezi. Meglehetősen... *Kisimítja magát, titkos kifejezésekkel murvogva*. Igen! A _denevér_ pengése, a teljes sötétségben való tájékozódás képessége... ez a titok megnyitásának kulcsa.</string>
     <string name="PlagueDoctorQuest_3_2_Epilogue">*Hátraveti a fejét, és felkacag, a nevetése visszhangzik a nyirkos laboratóriumában* Nagyszerű! Egy _Halál Lovag_ áll előttünk! Az erő, amely árad belőle... mámorító! *Hozzád fordul, szeme lázas csillogással* És neked, a bátorságod méltó jutalma: egy _Erő Főzet_! Adja meg neked az erőt, hogy legyőzd bármely ellenséget! Most... vizsgáljuk meg a tárgyunkat. A lényege olyan titkokat rejt, amelyek átírhatják az élet törvényeit! *Mániákus vigyorral lép a _Halál Lovag_ felé, és egy bugyborékoló zöld folyadékkal teli lombikot lóbál*</string>
     <string name="PlagueDoctorQuest_3_2_InProgress">Ez nem egyszer állat! Ez egy sétaútoni tanútanú a nekromancia erejéről! Fogj meg egyet élve és megsérzetlenül! Ez a Halál Lovagja... ez a kulcs!</string>
+    <string name="PlagueDoctorQuest_3_2_Prologue">Egy _Halál Lovag_! *Hangja az izgatottságtól repedezik, csontos ujjai remegen, miközben egy borbogó, foszforeszkens folyadékkal tölt üveget zár a kezében*. Ilyen lény... a halhatatlanság fénye! Megfogni az egyiket, élve... ez lenne... monumentális. Képzeld el, milyen titkok felelhetnek meg! Az ereje, ami a csontos ereiben folyik! Igen, egy _Halál Lovag_! Ez döntő fontosságú a kutatásomhoz! Mert lehetővé teszi, hogy mélyebben ásjunk... az élet... és a halál titokzatos világaiba!</string>
     <string name="PlagueDoctorQuest_4_1_InProgress">Öt _Törpe Boszorkánymester_, testük még mindig pulzál a sötét mágia gyenge visszhangjától! Hozd őket nekem, és jutalmul olyan italt adok, amely páratlan erővel felruház – egy _Erőesszenciát_, amely tíz férfi erejével telít meg!</string>
     <string name="PlagueDoctorQuest_4_1_Prologue">Hatchim! Elfler! O stubborn, yeraltı sakinleri, taş ve altına takıntılı. Ama _Elf Cadıcıları\'nı arıyorum... yerin derinliklerindeki bunalımlı sihirle beslenen çarpık büyüleri. Beş, beş tane bu kurumuş ruh lazım! Bedenleri belirli bir... olguayı anlamama anahtarı. Yer yüzeyinden arcan enerjilerini kanalize etme konusunda bir şeyler. Bir kırılma noktasına çok yakın olduğumu düşünüyorum, ama onların özünü, bozulmuş büyülerini gerekiyor! *He violently coughs into his handkerchief, a dark stain spreading across the delicate fabric*</string>
     <string name="PlagueDoctorQuest_4_2_Epilogue">Elismerés! Öt _Kobold Jégvarázsló_, jégeszenciájukat most már én kutathatom! A kapcsolatuk a fagyos pusztákhoz, ez valóban lenyűgöző. Ahogyan magát a vizet is irányítják... valóban figyelemre méltó. *Átad neked egy csillogó üvegcsét, tele élénk vörös folyadékkal* Ez, a bátor erőfeszítéseidért való: Egy _Erőital_! Igyál belőle és érezd tíz harcos erejének áramlását az erekben! Ne feledd, az ismeret hatalom... és a hatalom az egyetlen fegyverünk a közelgő sötétség ellen. Most pedig... boncoljuk fel ezeket a jégszemélyiségeket és tárd fel dermesztő titkaikat!</string>
@@ -1680,6 +1693,7 @@ Csak saját felelősségre töltsd le őket; azért jó szórakozást!</string>
     <string name="RatKing_Info3">Hogy merészeled, te jelentéktelen teremtmény, zavarni Ő Patkányságát?!</string>
     <string name="RatKing_Name">patkány király</string>
     <string name="RatKing_Name_Objective">patkány király</string>
+    <string name="RatSkullBuff_Info">Az éles szag megrettent mindennyi környező gürt, felriasztva őket a fejtoronttól.</string>
     <string name="RatSkullBuff_Name">Patkányölő</string>
     <string name="RatSkull_Info">Szép kis vadásztrófea lehetne, de túl büdös ahhoz hogy kitedd a falra.</string>
     <string name="RatSkull_Info2">Másrészt bizonyítja, hogy a tulajdonosa képes patkányokat ölni, még ha azok nagyok és büdösek is.</string>
@@ -2144,6 +2158,7 @@ Ezen lapok közt egy teljes varázsszövegre bukkantál: \&quot;%1$s\&quot; \n\&
     <string name="Succubus_Name">Szukkubusz</string>
     <string name="Succubus_Name_Objective">szukubbusz</string>
     <string name="SummonBeast_AtYourCommand">Parancsodra!</string>
+    <string name="SummonBeast_Info">Egy hatalmas állatsereg a parancsod alá vonására.\nAz eredmény nem garantált.</string>
     <string name="SummonBeast_Name">Állat hívó</string>
     <string name="SummonDeathling_Info">Megidéz egy élőhalottat, aki követ téged. Az életpontjai és sebzése a hősöd szintjével növekszik. \n\nMegidézési limit:%1$d (+1 minden varázsszint után)</string>
     <string name="SummonDeathling_Name">Halandó megidézése</string>
@@ -2180,6 +2195,7 @@ Ezen lapok közt egy teljes varázsszövegre bukkantál: \&quot;%1$s\&quot; \n\&
     <string name="Tengu_Info3">Megvagy, %s!</string>
     <string name="Tengu_Name">Tengu</string>
     <string name="Tengu_Name_Objective">Tengu</string>
+    <string name="TerrorBuff_Info">Úgy tűnik, valaki nagyon megrettent.</string>
     <string name="TerrorBuff_Name">Rémült</string>
     <string name="Thief_Carries">\n\n A %1$s egy _%2$s_t hordoz. Egyértelműen lopott.</string>
     <string name="Thief_Desc">A kazamata mélyebb szintjei mindig remek bűvóhelyül szolgáltak minden féle bűnözőnek. Nem mind tudta megőrizni a józan eszét hosszú ideig távol a napfénytől. Ezek az őrült banditák már réges régen elfelejtették, hogy kik ők és hogy miért lopnak. Úgy tűnik ennek a banditának tőre valamivel be van vonva.</string>
@@ -2683,6 +2699,7 @@ Ezen lapok közt egy teljes varázsszövegre bukkantál: \&quot;%1$s\&quot; \n\&
     <string name="Wraith_Name">lidérc</string>
     <string name="Wraith_Name_Objective">lidérc</string>
     <string name="WrnExperimental_hint">Ha ez a furcsa és torz világ túl kemény Önhöz, kérem kapcsolja ki ezeket az opciókat:\nKezdőképernyő -&gt; Beállítások -&gt; Játékmenet\nmenü segítségével, majd indítson új játékot vagy töltsön be egy másik mentést.</string>
+    <string name="WrnExperimental_moveTimeout">A lépés időkorlátja %d milliszekundumra van beállítva, gondolj gyorsan!</string>
     <string name="WrnExperimental_realtime">Valódi idő! mód engedélyezve: ez most valós idejű roguelike, gyorsan kattints vagy megszunadsz.\nSzeretnéd megnézni a csatak?\nJó szerencsével, miközben a csatornai rák ellenőrizte a bélzeteidet.</string>
     <string name="WrnExperimental_title">Kísérleti lehetőségek engedélyezve!</string>
     <string name="Yog_Desc">Yog-Dzewa egy Öreg Isten, egy hatalmas erejű entitás a káosz síkjáról. Egy évezreddel ezelőtt, az ősi törp birodalom hatalmas áldozatok árán épphogy meg tudta nyerni a háborút a démoni seregei ellen, azonban képtelenek voltak elpusztítani magát az Öreg Istent. Helyette bebörtönözték egy a városuk alatt fekvő tárnában, reménykedve hogy sosem lesz újra ereje ahhoz hogy támadjon.</string>
@@ -2775,6 +2792,7 @@ A beleegyezéseddel megerősíted, hogy elmúltál 16 éves és elfogadod a szem
     <string name="town_deco_cinema_sign_desc">Űgy tűnik van egy mozi az épület belsejében.</string>
     <string name="town_deco_cinema_sign_name">Mozi tábla</string>
     <string name="town_deco_clock_desc">A THESE nyílásai régóta egyetlen helyzetben fagytak meg.</string>
+    <string name="town_deco_clock_name">falióra</string>
     <string name="town_deco_common_bed_desc">Közönséges ágy.</string>
     <string name="town_deco_common_bed_name">Ágy</string>
     <string name="town_deco_common_door_desc">Egy udvarias kalandornak sosem szabadna más személyes tulajdonát háborgatnia, persze csak meghívás nélkül.</string>
@@ -2933,6 +2951,7 @@ A beleegyezéseddel megerősíted, hogy elmúltál 16 éves és elfogadod a szem
     <string name="town_deco_tree_desc">Egy furcsa érzés kerít hatalmába mikor ránézel erre a békés, élő fára. Elvégre nem olyan messze egy borzalmakkal és halállal teli kazamata helyezkedik el.</string>
     <string name="town_deco_tree_name">Fa</string>
     <string name="town_deco_urn_desc">Clay urn, perhaps with someones ashes.</string>
+    <string name="town_deco_urn_name">Urna</string>
     <string name="town_deco_vat_desc">Ez a kő-edény tele van szentvízzel</string>
     <string name="town_deco_vat_name">Dézsa</string>
     <string name="town_deco_wall_beam_desc">Megbízható segítséget nyújt az itteni építkezéshez.</string>
@@ -2966,8 +2985,29 @@ A beleegyezéseddel megerősíted, hogy elmúltál 16 éves és elfogadod a szem
     <string name="town_deco_wooden_table_desc">Ez egy szépen kidolgozott fa asztal.</string>
     <string name="town_deco_wooden_table_name">Fa asztal</string>
     <string name="town_table_fortune_ball_desc">Kristálygömb, misteriális gőz takarja el belülről.</string>
+    <string name="town_table_fortune_ball_name">kristálygolyó</string>
     <string name="town_table_fortune_desc">Ez az asztal, rajta selyem tarosszal. Különböző tarot kártyákat látsz az asztalon, adott sorrendben lerakva. </string>
     <string name="town_table_fortune_name">Asztal</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -61,6 +61,7 @@
     <string name="Amulet_ACEnd">PENGEMBARAAN BERAKHIR</string>
     <string name="Amulet_Info">Azimat Yendor merupakan artifak terkenal yang sangat berkuasa tetapi tidak diketahui asal usulnya. Dikatakan azimat ini berupaya memenuhi apa jua keinginan pemiliknya dengan syarat dia mampu \&quot;memujuk\&quot; azimat tersebut merealisasikan hasratnya.</string>
     <string name="Amulet_Name">Azimat Yendor</string>
+    <string name="AnesthesiaBuff_Info">Tidak merasai kesakitan dan tidak akan bangun dari serangan, tetapi masih menerima kerosakan.</string>
     <string name="AnesthesiaBuff_Name">Anestesia</string>
     <string name="Anesthesia_Cast">%s terlelap ke dalam tidur yang mendalam dan tanpa mimpi.</string>
     <string name="Anesthesia_Info">Menghasilkan tidur yang mendalam dan tidak wajar pada sasaran anda. Bahkan serangan yang paling keganasan tidak akan membangunkan mereka dari tidur ini.</string>
@@ -292,6 +293,8 @@
     <string name="BlessedBuff_Info">Semoga ketepatan dan pengelakan datang kepada mereka yang disentuh berkat!</string>
     <string name="BlessedBuff_Name">Diberkati</string>
     <string name="BlindnessBuff_Name">Menjadi Buta</string>
+    <string name="BloodTransfusion_Drained">Esensi kehidupan mengalir dari peliharaan anda ke dalam diri anda.</string>
+    <string name="BloodTransfusion_Info">Menghisap hampir semua darah dari sasaran untuk menyembuhkan diri sendiri. Ritual gelap pengorbanan dan kehidupan.</string>
     <string name="BloodTransfusion_Name">Pengisaran Darah</string>
     <string name="BloodTransfusion_WontAgreed">Sasaran menahan pengekstrakan intipati kehidupannya.</string>
     <string name="BodyArmorBuff_Info">Perisai meningkat tetapi menjejaskan kelajuan pergerakan.</string>
@@ -334,6 +337,7 @@
     <string name="CagedKobold_Name_Objective">kobold terkurung</string>
     <string name="CagedKobold_Quest_End">Oh, terima kasih, terima kasih banyak-banyak! Macamana kamu jumpa kunci ini? Kamu...kamu berjaya musnahkan senjata tu?! Hebat! tahu tak, aku akan bantu kamu, dan aku tahu langkah terbaik ialah mengikut kamu buat masa ini. Kobold terkurung bertukar menjadi lilin</string>
 
+    <string name="Calm_Cast">%s menjadi tenang.</string>
     <string name="Calm_Info">Di sini ada banyak makhluk yang marah, mari kita bantu mereka.</string>
     <string name="Calm_Name">Tenang</string>
     <string name="CandleOfMindVision_Info">Rupanya seperti lilin biasa, anda tidak menjangka ia boleh ditemui dalam kurungan bawah tanah ini. Yang peliknya lilin ini berasa suam bila dipegang walaupun belum lagi dinyalakan.</string>
@@ -353,6 +357,7 @@
     <string name="Carcass_Info">Bangkai %s yang benar-benar mati</string>
     <string name="Carcass_Kick">Ini %s sudah mati sepenuhnya, tiada perlu sepak.</string>
     <string name="Carcass_Name">baki-baki %s</string>
+    <string name="Carcass_Necromancy">Anda telah membangkitkan mayat %s!</string>
     <string name="Carcass_Necromancy_Failed">\&quot;Percubaan anda untuk menghidupkan mayat %s gagal!\&quot;</string>
     <string name="Carcass_TooFarToDissect">Anda perlu lebih dekat untuk menyiasat bangkai tersebut.</string>
     <string name="Caves_TileDescBookshelf">Siapa yang perlukan rak buku di dalam gua?</string>
@@ -414,7 +419,9 @@
     <string name="ChaosCrystal_Use">GUNA</string>
     <string name="ChaosHelmet_Info">Topi keledar warna merah darah. Merupakan simbol seorang satria chaos.</string>
     <string name="ChaosHelmet_Name">Topi Keledar Chaos</string>
+    <string name="ChaosShield_desc">Perisai Kacau adalah hasil penyatuan Kristal Kacau dengan perisai biasa, menyebabkan ia memanifestasikan efek kacau acak saat berhasil memblokir.</string>
     <string name="ChaosShield_name">Perisai Kaos</string>
+    <string name="ChaosStaff_Gender">masculine</string>
     <string name="ChaosStaff_Info">Tongkat didorong dengan Kuasa Chaos! Tiada ada lagi benda yang ahli sihir mahukan atau takutkan?</string>
     <string name="ChaosStaff_Name">tongkat chaos</string>
     <string name="ChaosSword_Gender">masculine</string>
@@ -546,6 +553,7 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="ComboBuff_Info">Serangan seterusnya akan menjadi serangan kombo.</string>
     <string name="ComboBuff_Name">Kombo</string>
     <string name="Combo_Combo">Kombo %d-pukulan!</string>
+    <string name="CommonArrow_Gender">feminine</string>
     <string name="CommonArrow_Info">Anak panah kayu biasa dengan kepala panah besi.</string>
     <string name="CommonArrow_Name">anak panah</string>
     <string name="CompositeCrossbow_Gender">masculine</string>
@@ -572,6 +580,7 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="CrippleBuff_Info">Tubuhnya cacat tetapi pertarungan tetap berlanjut.</string>
     <string name="CrippleBuff_Name">Dilumpuhkan</string>
     <string name="Crystal_Desc">Ada kristal bersinaran terapung di udara. Berkemungkinan ia terisi dengan kuasa ajaib yang kuat.</string>
+    <string name="Crystal_Gender">masculine</string>
     <string name="Crystal_Name">Kristal terapung</string>
     <string name="Crystal_Name_Objective">Kristal terapung</string>
     <string name="CurareDart_Gender">masculine</string>
@@ -890,6 +899,7 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="Haste_Info">Kerenginan akan membolehkan pelaku bergerak dengan kelajuan yang sangat ekstrem sehingga segalanya di sekelilingnya akan nampak statik. Kerenginan ini akan menggunakan banyak tenaga jadi hanya boleh digunakan untuk tempoh masa yang singkat.\n\nPenguasa yang mahir mampu kekal dalam keadaan kerenginan selama tempoh yang lebih lama.</string>
     <string name="Haste_Name">Extreme Haste</string>
     <string name="Heal_Cast">%s telah disembuhkan.</string>
+    <string name="Heal_Info">Jurus ini agak berguna di Dungeon, bukan?</string>
     <string name="Heal_Name">Sembuh</string>
     <string name="HealerNPC_Desc">Orang tua, kelihatan beliau seperti pembuat tongkat sakti.</string>
     <string name="HealerNPC_Gender">masculine</string>
@@ -950,6 +960,7 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="HeroClass_NecromancerPerks_2">Pembangkit mayat bermula dengan jubah Pembangkit mayat yang unik, ia dapat menjana 1 mata mana bagi setiap makhluk yang dibunuh oleh pemakainya.</string>
     <string name="HeroClass_NecromancerPerks_3">Pembangkit mayat bermula dengan kunci rangka aras 7.</string>
     <string name="HeroClass_NecromancerPerks_4">Posyen Penyembuhan dapat dikenal pasti pada awal pengembaraan.</string>
+    <string name="HeroClass_None">rakyat biasa</string>
     <string name="HeroClass_PlagueDoctorPerks_0">Doktor pesakit memanen [yellow:Kelenjar Beracun], [yellow:Organ Busuk], [yellow:Pecahan Tulang] dari musuh yang telah dikalahkan.</string>
     <string name="HeroClass_PlagueDoctorPerks_1">Bermula dengan Topeng Plague (kebal terhadap semua Gas) dan Gergaji Tulang. Serangan kritikal menjatuhkan bahagian tambahan, dan Gergaji memberikan +50% kerosakan pada musuh yang lumpuh.</string>
     <string name="HeroClass_PlagueDoctorPerks_2">Mulakan dengan sebuah [yellow:Plague Mask] (kebal terhadap semua Gas) dan sebuah [yellow:Bone Saw]. Serangan kritikal menjatuhkan bahagian tambahan, dan Saw memberikan x1.5 kerosakan kepada musuh yang lumpuh.</string>
@@ -1393,6 +1404,7 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="Monk_Defense">ditepis</string>
     <string name="Monk_Desc">Sami ini merupakan si fanatik, yang tegar melindungi rahsia bandar mereka dari semua makhluk lain. Mereka tidak memakai perisai atau menggunakan senjata, hanya bersandarkan seni pertempuran tanpa senjata.</string>
     <string name="Monk_Disarm">%1$s telah mengetuk jatuh %2$s dari pegangan anda!</string>
+    <string name="Monk_Gender">masculine</string>
     <string name="Monk_Name">sami orang kerdil</string>
     <string name="Monk_Name_Objective">sami orang kerdil</string>
     <string name="MoongraceBuff_Info">Udara di sekeliling menjadi lebih jenuh, membolehkan tumpuan yang lebih baik dan pemulihan rahsia magik.</string>
@@ -1472,6 +1484,7 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="Pasty_Info">Pai Cornwall asli ini mengandungi inti tradisi daging dan ubi kentang.</string>
     <string name="Pasty_Name">pai</string>
     <string name="Pickaxe_ACMine">MELOMBONG</string>
+    <string name="Pickaxe_Gender">feminine</string>
     <string name="Pickaxe_Info">Alat bersaiz besar dan tegap ini digunakan untuk memecahkan batu. Ia juga boleh digunakan sebagai senjata.</string>
     <string name="Pickaxe_InsufficientStr">Kuat daya tidak cukup untuk menggali!</string>
     <string name="Pickaxe_Name">beliung</string>
@@ -1953,6 +1966,7 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="Sheep_Name">kambing biri-biri</string>
     <string name="Sheep_Name_Objective">kambing biri-biri</string>
     <string name="ShieldBuffNotReady_Info">Perisai anda tidak siap untuk menghalang serangan seterusnya.</string>
+    <string name="ShieldBuffNotReady_Name">Perisai belum sedia</string>
     <string name="ShieldBuffReady_Info">Perisai anda bersedia untuk menghalang serangan seterusnya.</string>
     <string name="ShieldBuffReady_Name">Shield is ready</string>
     <string name="ShieldInfoTemplate">Perisai ini akan menghalang sehingga %1$d kerosakan masuk. Dengan peluang %2$d %%. Ia akan mengambil masa %3$3.1f saat untuk pulih selepas berjaya menghalang.</string>
@@ -2533,6 +2547,7 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="WndMovieTheatre_Sorry">Alamak ada masalah, kami tidak dapat memberi ganjaran video kepada anda...</string>
     <string name="WndMovieTheatre_Thank_You">Terima kasih atas sumbangan anda!</string>
     <string name="WndMovieTheatre_Title">Panggung Wayang</string>
+    <string name="WndMovieTheatre_Watch">tonton iklan</string>
     <string name="WndPlayGames_BackupProgress">Sandar Kemajuan Permainan</string>
     <string name="WndPlayGames_Connecting">Menyambung ke Permainan Google Play, sila tunggu sebentar</string>
     <string name="WndPlayGames_RestoreProgress">Pulihkan Kemajuan Permainan</string>
@@ -2969,6 +2984,21 @@ Pedulikan semua itu, tiada lagi syurga di atas sana, Maka, beliau berpatah balik
     <string name="town_table_fortune_ball_name">Bola kristal</string>
     <string name="town_table_fortune_desc">Meja ini dilitupi dengan kain sutera. Anda dapati pelbagai jenis kad tarot diletak dalam susunan yang tersendiri.</string>
     <string name="town_table_fortune_name">Meja</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
