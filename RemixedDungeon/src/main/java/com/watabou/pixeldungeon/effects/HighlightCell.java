@@ -47,7 +47,7 @@ public class HighlightCell extends Image {
 
 		setOrigin( 0.5f );
 		
-		point( DungeonTilemap.tileToWorld( pos ).offset( 
+		point( GameScene.getBaseTiles().tileToWorld( pos ).offset( 
 			DungeonTilemap.SIZE / 2, 
 			DungeonTilemap.SIZE / 2 ) );
 	}

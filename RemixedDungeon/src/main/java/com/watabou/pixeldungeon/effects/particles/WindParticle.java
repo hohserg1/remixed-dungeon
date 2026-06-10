@@ -8,6 +8,7 @@ import com.watabou.noosa.particles.Emitter.Factory;
 import com.watabou.noosa.particles.PixelParticle;
 import com.watabou.pixeldungeon.Dungeon;
 import com.watabou.pixeldungeon.DungeonTilemap;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.PointF;
 import com.watabou.utils.Random;
 
@@ -66,7 +67,7 @@ public class WindParticle extends PixelParticle {
 		
 		public Wind( int pos ) {
 			this.pos = pos;
-			PointF p = DungeonTilemap.tileToWorld( pos );
+            PointF p = GameScene.getBaseTiles().tileToWorld(pos);
 			x = p.x;
 			y = p.y;
 			

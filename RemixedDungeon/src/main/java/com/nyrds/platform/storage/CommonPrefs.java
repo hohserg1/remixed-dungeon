@@ -25,6 +25,7 @@ public class CommonPrefs {
     public static final String KEY_TOOL_STYLE = "tool_style";
     public static final String KEY_HANDEDNESS = "handedness";
     public static final String KEY_USE_ISOMETRIC_TILES = "use_isometric_tiles";
+    public static final String KEY_TILEMAP_MODE = "tilemap_mode";
     public static final String KEY_TILES_QUESTION_ASKED = "tiles_question_asked";
 
     public static final String KEY_MUSIC_VOLUME = "music_volume";

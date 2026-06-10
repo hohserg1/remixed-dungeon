@@ -37,15 +37,7 @@ import com.watabou.noosa.Text;
 import com.watabou.noosa.Visual;
 import com.watabou.noosa.particles.DummyEmitter;
 import com.watabou.noosa.particles.Emitter;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.ClassicDungeonTilemap;
-import com.watabou.pixeldungeon.CustomLayerTilemap;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.pixeldungeon.FogOfWar;
-import com.watabou.pixeldungeon.Statistics;
-import com.watabou.pixeldungeon.XyzDungeonTilemap;
+import com.watabou.pixeldungeon.*;
 import com.watabou.pixeldungeon.actors.Actor;
 import com.watabou.pixeldungeon.actors.Char;
 import com.watabou.pixeldungeon.actors.blobs.Blob;
@@ -849,7 +841,7 @@ public class GameScene extends PixelScene {
             }
 
             Group effect = ParticleEffect.addToCell(effectName, cell);
-            effect.setIsometricShift(Dungeon.isIsometricMode());
+            effect.setIsometricShift(Dungeon.getPreferredTilemapMode() == TilemapMode._2_5D);
             scene.add(effect);
             return effect;
         }
@@ -1188,7 +1180,7 @@ public class GameScene extends PixelScene {
     }
 
     @LuaInterface
-    static DungeonTilemap getBaseTiles() {
+    public static DungeonTilemap getBaseTiles() {
         if (isSceneReady()) {
             return scene.baseTiles;
         }

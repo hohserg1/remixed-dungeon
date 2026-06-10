@@ -27,7 +27,7 @@ public class WaterOfAwareness extends WellWater {
 	protected boolean affectHero( Hero hero ) {
 		
 		Sample.INSTANCE.play( Assets.SND_DRINK );
-		emitter.getParent().add( new Identification( DungeonTilemap.tileCenterToWorld( pos ) ) );
+		emitter.getParent().add( new Identification( GameScene.getBaseTiles().tileCenterToWorld( pos ) ) );
 		
 		hero.getBelongings().observe();
 		Level level = hero.level();
@@ -66,7 +66,7 @@ public class WaterOfAwareness extends WellWater {
 			item.identify();
 			Badges.validateItemLevelAcquired( item );
 			
-			emitter.getParent().add( new Identification( DungeonTilemap.tileCenterToWorld( pos ) ) );
+			emitter.getParent().add( new Identification( GameScene.getBaseTiles().tileCenterToWorld( pos ) ) );
 			
 			clear();
 			

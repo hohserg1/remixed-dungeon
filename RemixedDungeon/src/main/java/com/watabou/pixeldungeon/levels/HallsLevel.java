@@ -13,6 +13,7 @@ import com.watabou.pixeldungeon.Dungeon;
 import com.watabou.pixeldungeon.DungeonTilemap;
 import com.watabou.pixeldungeon.actors.mobs.npcs.Hedgehog;
 import com.watabou.pixeldungeon.items.Torch;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.PointF;
 import com.watabou.utils.Random;
 
@@ -171,8 +172,8 @@ public class HallsLevel extends RegularLevel {
 				if ((delay -= GameLoop.elapsed) <= 0) {
 					
 					delay = Random.Float( 2 );
-					
-					PointF p = DungeonTilemap.tileToWorld( pos );
+
+                    PointF p = GameScene.getBaseTiles().tileToWorld(pos);
 					((FireParticle)recycle( FireParticle.class )).reset( 
 						p.x + Random.Float( DungeonTilemap.SIZE ), 
 						p.y + Random.Float( DungeonTilemap.SIZE ) );

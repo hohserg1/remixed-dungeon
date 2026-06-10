@@ -5,6 +5,7 @@ import com.watabou.pixeldungeon.Dungeon;
 import com.watabou.pixeldungeon.DungeonTilemap;
 import com.watabou.pixeldungeon.effects.Halo;
 import com.watabou.pixeldungeon.effects.particles.FlameParticle;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.PointF;
 
 public class Candle extends Emitter {
@@ -16,7 +17,7 @@ public class Candle extends Emitter {
 
         this.pos = pos;
 
-        PointF p = DungeonTilemap.tileCenterToWorld( pos );
+        PointF p = GameScene.getBaseTiles().tileCenterToWorld(pos);
         pos( p.x - 1, p.y - 3, 2, 0 );
 
         pour( FlameParticle.FACTORY, 0.15f );

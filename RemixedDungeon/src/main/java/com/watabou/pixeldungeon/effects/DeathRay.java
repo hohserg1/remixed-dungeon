@@ -6,6 +6,7 @@ import com.nyrds.platform.gl.Gl;
 import com.watabou.noosa.Image;
 import com.watabou.pixeldungeon.Assets;
 import com.watabou.pixeldungeon.DungeonTilemap;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.PointF;
 
 public class DeathRay extends Image {
@@ -19,8 +20,8 @@ public class DeathRay extends Image {
 	public DeathRay(int from, int to) {
 		super( Effects.get( Effects.Type.RAY ) );
 
-		PointF s = DungeonTilemap.tileCenterToWorld(from);
-		PointF e = DungeonTilemap.tileCenterToWorld(to);
+        PointF s = GameScene.getBaseTiles().tileCenterToWorld(from);
+        PointF e = GameScene.getBaseTiles().tileCenterToWorld(to);
 
 		origin.set( 0, height / 2 );
 

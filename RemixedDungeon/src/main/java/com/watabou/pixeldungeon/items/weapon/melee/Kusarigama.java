@@ -11,6 +11,7 @@ import com.watabou.pixeldungeon.actors.buffs.Vertigo;
 import com.watabou.pixeldungeon.effects.KusarigamaChain;
 import com.watabou.pixeldungeon.mechanics.Ballistica;
 import com.watabou.pixeldungeon.scenes.CellSelector;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.pixeldungeon.sprites.CharSprite;
 import com.watabou.utils.Random;
 
@@ -42,7 +43,7 @@ public class Kusarigama extends MeleeWeapon {
         casterSprite
                 .getParent()
                 .add(new KusarigamaChain(casterSprite.center(),
-                        DungeonTilemap.tileCenterToWorld(tgt)));
+                    GameScene.getBaseTiles().tileCenterToWorld(tgt)));
     }
 
     @Override

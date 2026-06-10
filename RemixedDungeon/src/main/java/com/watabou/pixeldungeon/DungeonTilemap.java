@@ -8,12 +8,16 @@ import com.watabou.noosa.TextureFilm;
 import com.watabou.noosa.Tilemap;
 import com.watabou.noosa.tweeners.AlphaTweener;
 import com.watabou.pixeldungeon.levels.Level;
+import com.watabou.pixeldungeon.levels.Terrain;
 import com.watabou.utils.Point;
 import com.watabou.utils.PointF;
 
+import com.watabou.utils.Rect;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.function.IntConsumer;
 
 public abstract class DungeonTilemap extends Tilemap {
 
@@ -36,17 +40,23 @@ public abstract class DungeonTilemap extends Tilemap {
 
 		TextureFilm probe = TextureCache.getFilm(tiles, SIZE, SIZE);
 
+        switch (Dungeon.getPreferredTilemapMode()) {
+            case classic:
+                if (probe.size() == 256) {
+                    return new VariativeDungeonTilemap(level, tiles);
+                }
 
-		if (tiles.contains("_xyz")) {
-			return new XyzDungeonTilemap(level, tiles);
-		}
+                return new ClassicDungeonTilemap(level, tiles);
 
+            case _2_5D:
+                return new XyzDungeonTilemap(level, tiles);
 
-		if(probe.size() == 256) {
-			return new VariativeDungeonTilemap(level, tiles);
-		}
+            case isometric:
+                return new IsometricDungeonTilemap(level, tiles);
 
-		return new ClassicDungeonTilemap(level, tiles);
+            default:
+                return new ClassicDungeonTilemap(level, tiles);
+        }
 	}
 
 
@@ -118,12 +128,12 @@ public abstract class DungeonTilemap extends Tilemap {
 	@Nullable
 	public abstract Image tile(int pos);
 
-	public static PointF tileToWorld(int pos) {
+    public PointF tileToWorld(int pos) {
 		return new PointF(level.cellX(pos), level.cellY(pos)).scale(SIZE);
 	}
 
 	@Contract("_ -> new")
-	public static @NotNull PointF tileCenterToWorld(int pos) {
+    public @NotNull PointF tileCenterToWorld(int pos) {
 		return new PointF((level.cellX(pos) + 0.5f) * SIZE,
 				(level.cellY(pos) + 0.5f) * SIZE);
 	}
@@ -135,6 +145,82 @@ public abstract class DungeonTilemap extends Tilemap {
 
 	public abstract void updateCell(int cell, Level level);
 
-	public abstract void updateAll();
+    protected boolean isAnyWallCell(int cell) {
+        if (!level.cellValid(cell)) {
+            return true;
+        }
+
+        if (!level.mapped[cell]) {
+            return true;
+        }
+
+        return isSpWallCell(cell) || isWallCell(cell);
+    }
+
+    protected boolean isSpWallCell(int cell) {
+        if (!level.cellValid(cell)) {
+            return true;
+        }
+
+        switch (level.map[cell]) {
+            case Terrain.BOOKSHELF:
+            case Terrain.SECRET_DOOR:
+                return true;
+        }
+
+        return false;
+    }
+
+    protected boolean isWallCell(int cell) {
+        if (!level.cellValid(cell)) {
+            return true;
+        }
+
+        switch (level.map[cell]) {
+            case Terrain.WALL:
+            case Terrain.WALL_DECO:
+            case Terrain.SECRET_DOOR:
+                return true;
+        }
+        return false;
+    }
+
+    protected boolean isDoorCell(int cell) {
+        if (!level.cellValid(cell)) {
+            return false;
+        }
+
+        switch (level.map[cell]) {
+            case Terrain.DOOR:
+            case Terrain.OPEN_DOOR:
+            case Terrain.LOCKED_DOOR:
+                return true;
+        }
+        return false;
+    }
+
+    protected void iterateCells(int fromX, int toX, int fromY, int toY, CellAction everyCell, RowAction everyRow) {
+        int mapHeight = data.length / mapWidth;
+        for (int y = Math.max(0, fromY); y < Math.min(mapHeight, toY); y++) {
+            int cell = y * mapWidth + updated.left;
+            everyRow.apply(cell, y);
+            for (int x = Math.max(0, fromX); x < Math.min(mapWidth, toX); x++) {
+                everyCell.apply(cell, x, y);
+            }
+        }
+    }
+    protected void iterateCells(Rect area, CellAction everyCell, RowAction everyRow) {
+        iterateCells(area.left,area.right, area.top, area.bottom, everyCell,everyRow)
+    }
+
+    protected interface CellAction {
+        void apply(int cell, int x, int y);
+    }
+
+    protected interface RowAction {
+        void apply(int cell, int y);
+    }
+
+    public abstract void updateAll();
 
 }

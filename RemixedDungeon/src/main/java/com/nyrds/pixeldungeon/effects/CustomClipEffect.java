@@ -7,6 +7,7 @@ import com.watabou.noosa.Animation;
 import com.watabou.noosa.MovieClip;
 import com.watabou.noosa.TextureFilm;
 import com.watabou.pixeldungeon.DungeonTilemap;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.Callback;
 import com.watabou.utils.PointF;
 
@@ -36,7 +37,7 @@ public class CustomClipEffect extends MovieClip implements MovieClip.Listener, I
 	}
 
 	public void place(int cell) {
-		PointF p = DungeonTilemap.tileToWorld(cell);
+        PointF p = GameScene.getBaseTiles().tileToWorld(cell);
 		setX(p.x + centerShift.x);
 		setY(p.y + centerShift.y);// - Gizmo.isometricShift();
 	}

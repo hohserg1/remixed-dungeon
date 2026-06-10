@@ -29,7 +29,7 @@ public class WaterSink extends Emitter {
 
         this.pos = pos;
 
-        PointF p = DungeonTilemap.tileCenterToWorld(pos);
+        PointF p = GameScene.getBaseTiles().tileCenterToWorld(pos);
         pos(p.x - 2, p.y + 1, 4, 0);
 
         pour(factory, 0.05f);

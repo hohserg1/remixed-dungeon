@@ -125,7 +125,7 @@ public class Dungeon {
     public static HeroClass heroClass;
 
     @Getter
-    private static boolean isometricMode = false;
+    private static TilemapMode preferredTilemapMode = TilemapMode.classic;
     public static boolean isometricModeAllowed = false;
 
 
@@ -315,9 +315,9 @@ public class Dungeon {
         }
         
         if (isometricModeAllowed) {
-            setIsometricMode(Preferences.INSTANCE.getBoolean(CommonPrefs.KEY_USE_ISOMETRIC_TILES, false));
+            setPreferredTilemapMode(TilemapMode.values()[Preferences.INSTANCE.getInt(CommonPrefs.KEY_TILEMAP_MODE, TilemapMode.classic.ordinal())]);
         } else {
-            setIsometricMode(false);
+            setPreferredTilemapMode(TilemapMode.classic);
         }
 
         nightMode = new GregorianCalendar().get(Calendar.HOUR_OF_DAY) < 7;
@@ -1041,7 +1041,7 @@ public class Dungeon {
     }
 
     public static boolean isNorthWallVisible(int cell) {
-        if (!Dungeon.isIsometricMode()) {
+        if (Dungeon.preferredTilemapMode != TilemapMode._2_5D) {
             return isCellVisible(cell);
         }
 
@@ -1063,9 +1063,9 @@ public class Dungeon {
         }
     }
 
-    public static void setIsometricMode(boolean isometricMode) {
-        EventCollector.setSessionData("isometricMode", String.valueOf(isometricMode));
-        Dungeon.isometricMode = isometricMode;
+    public static void setPreferredTilemapMode(TilemapMode mode) {
+        EventCollector.setSessionData("isometricMode", String.valueOf(mode));
+        Dungeon.preferredTilemapMode = mode;
     }
 
 }

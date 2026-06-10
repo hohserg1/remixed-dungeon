@@ -34,7 +34,7 @@ public class LevelObjectSprite extends MovieClip implements Tweener.Listener, Mo
 
 	public void move(int from, int to) {
 		if (getParent() != null) {
-			Tweener motion = new PosTweener(this, DungeonTilemap.tileToWorld(to).offset(centerShift), 0.1f);
+			Tweener motion = new PosTweener(this, GameScene.getBaseTiles().tileToWorld(to).offset(centerShift), 0.1f);
 			motion.listener = this;
 			getParent().add(motion);
 
@@ -53,7 +53,7 @@ public class LevelObjectSprite extends MovieClip implements Tweener.Listener, Mo
 	}
 
 	private void setLevelPos(int cell) {
-		PointF p = DungeonTilemap.tileToWorld(cell);
+		PointF p = GameScene.getBaseTiles().tileToWorld(cell);
 		setX(p.x + centerShift.x);
 		setY(p.y + centerShift.y);
 		this.cell = cell;

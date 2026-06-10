@@ -5,6 +5,7 @@ import com.watabou.noosa.Group;
 import com.watabou.noosa.particles.PixelParticle;
 import com.watabou.pixeldungeon.Dungeon;
 import com.watabou.pixeldungeon.DungeonTilemap;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.PointF;
 import com.watabou.utils.Random;
 
@@ -33,7 +34,7 @@ public class Vein extends Group {
 
                 delay = Random.Float();
 
-                PointF p = DungeonTilemap.tileToWorld( pos );
+                PointF p = GameScene.getBaseTiles().tileToWorld(pos);
                 ((Sparkle)recycle( Sparkle.class )).reset(
                     p.x + Random.Float( DungeonTilemap.SIZE ),
                     p.y + Random.Float( DungeonTilemap.SIZE ) );

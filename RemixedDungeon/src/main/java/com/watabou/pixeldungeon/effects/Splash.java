@@ -11,7 +11,7 @@ import com.watabou.utils.Random;
 public class Splash {
 	
 	public static void at( int cell, final int color, int n ) {
-		at( DungeonTilemap.tileCenterToWorld( cell ), color, n );
+		at( GameScene.getBaseTiles().tileCenterToWorld( cell ), color, n );
 	}
 	
 	public static void at( PointF p, final int color, int n ) {

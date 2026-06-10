@@ -243,7 +243,7 @@ public class QuickSlot extends Button implements WndBag.Listener, WndHeroSpells.
         if (targeting) {
             if (Actor.all().contains(lastTarget)) {
                 lastTarget.getSprite().getParent().add(crossM);
-                crossM.point(DungeonTilemap.tileToWorld(lastTarget.getPos()));
+                crossM.point(GameScene.getBaseTiles().tileToWorld(lastTarget.getPos()));
                 crossB.setVisible(true);
             } else {
                 lastTarget = CharsList.DUMMY;

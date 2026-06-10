@@ -512,7 +512,7 @@ public class CharUtils {
         var marker = Icons.TARGET.get();
         chr.getSprite().getParent().add(marker);
 
-        marker.point(DungeonTilemap.tileToWorld(chr.getPos()));
+        marker.point(GameScene.getBaseTiles().tileToWorld(chr.getPos()));
         marker.y += chr.getSprite().visualOffsetY();
         markers.add(marker);
     }
@@ -520,7 +520,7 @@ public class CharUtils {
     static public void markTarget(Char chr) {
         var marker = Icons.TARGET.get();
         chr.getSprite().getParent().add(marker);
-        marker.point(DungeonTilemap.tileToWorld(chr.getTarget()));
+        marker.point(GameScene.getBaseTiles().tileToWorld(chr.getTarget()));
         markers.add(marker);
     }
 

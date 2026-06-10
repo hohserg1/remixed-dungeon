@@ -2713,6 +2713,7 @@ No, there was no place for her in the light, not anymore. She turned from the me
     <string name="WndSettings_Handedness">Преобладающая рука</string>
     <string name="WndSettings_Immersive">Режим \&quot;погружение\&quot;</string>
     <string name="WndSettings_InGameUiSettings">Настройки интерфейса</string>
+    <string name="WndSettings_TilemapModeSettings">Вид графики</string>
     <string name="WndSettings_Music">Музыка</string>
     <string name="WndSettings_Quickslots">Слоты быстрого доступа</string>
     <string name="WndSettings_RecordVideo">Запись видео</string>
@@ -2741,6 +2742,7 @@ No, there was no place for her in the light, not anymore. She turned from the me
     <string name="WndStory_Spiders">Давным-давно здесь пролегали прииски, богатые магически активными каменьями. Когда же драгоценные залежи истощились и последняя шахтёрская компания покинула это место, здесь осталась лишь бесконечная вереница сырых туннелей. Спустя годы это место заселили глубинные пауки. Опасные и непредсказуемые твари снискали, для этих мест, дурную славу, но несмотря на это находились смельчаки и безумцы охочие до наживы. Ведь чем больше была опасность, тем быстрее расходилась молва о магических артефактах, оставленных в шахтах. Однажды коварная колдунья, скрываясь от преследования, затаилась в глубине пещер. Суеверные люди не отважились ступить во тьму туннелей и стали ждать у входа.\n\n Но она так и не вышла. Поговаривали, быть может, колдунья нашла другой выход из пещер, а может смогла прошмыгнуть мимо преследователей… а может сгинула во тьме лабиринта, окружённая шорохами глубинных тварей.</string>
     <string name="WndTilesKind_ClassicLook">Классический вид</string>
     <string name="WndTilesKind_NewLook">Новый вид</string>
+    <string name="WndTilesKind_IsometricLook">Изометрический вид</string>
     <string name="WndTilesKind_Title">Еще один момент:</string>
     <string name="WndTilesKind_text">Вы собираетесь войти в Подземелье одержимое извращенным колдовством, однако вы можете выбрать:\n
 Вы предпочитаете современное псевдо 3d или классический плоский вид?\n

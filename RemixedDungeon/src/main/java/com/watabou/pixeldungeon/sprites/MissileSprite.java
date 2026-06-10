@@ -6,6 +6,7 @@ import com.watabou.noosa.tweeners.PosTweener;
 import com.watabou.noosa.tweeners.Tweener;
 import com.watabou.pixeldungeon.DungeonTilemap;
 import com.watabou.pixeldungeon.items.Item;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.Callback;
 import com.watabou.utils.PointF;
 
@@ -27,9 +28,9 @@ public class MissileSprite extends ItemSprite implements Tweener.Listener {
 
 		this.callback = listener;
 
-		point( DungeonTilemap.tileToWorld( from ) );
+        point(GameScene.getBaseTiles().tileToWorld(from));
 
-		PointF dest = DungeonTilemap.tileToWorld( to );
+        PointF dest = GameScene.getBaseTiles().tileToWorld(to);
 
 		PointF d = PointF.diff( dest, point() ); 
 		speed.set( d ).normalize().scale( ZapEffect.SPEED );

@@ -5,6 +5,7 @@ import com.nyrds.pixeldungeon.game.GameLoop;
 import com.watabou.gltextures.TextureCache;
 import com.watabou.noosa.Image;
 import com.watabou.pixeldungeon.DungeonTilemap;
+import com.watabou.pixeldungeon.scenes.GameScene;
 
 public class CheckedCell extends Image {
 	
@@ -14,8 +15,8 @@ public class CheckedCell extends Image {
 		super( TextureCache.createSolid( 0xFF55AAFF ) );
 
 		setOrigin( 0.5f );
-		
-		point( DungeonTilemap.tileToWorld( pos ).offset( 
+
+        point(GameScene.getBaseTiles().tileToWorld(pos).offset(
 			DungeonTilemap.SIZE / 2, 
 			DungeonTilemap.SIZE / 2 ) );
 		

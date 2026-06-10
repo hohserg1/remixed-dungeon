@@ -5,6 +5,7 @@ import com.watabou.noosa.Camera;
 import com.watabou.noosa.Image;
 import com.watabou.pixeldungeon.DungeonTilemap;
 import com.watabou.pixeldungeon.levels.Level;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.PointF;
 
 public class Compass extends Image {
@@ -32,7 +33,7 @@ public class Compass extends Image {
 
     public void setCell(int cell) {
         this.cell = cell;
-        cellCenter = DungeonTilemap.tileCenterToWorld(cell);    // Exact location of the center of the tile
+        cellCenter = GameScene.getBaseTiles().tileCenterToWorld(cell);    // Exact location of the center of the tile
     }
 
     @Override

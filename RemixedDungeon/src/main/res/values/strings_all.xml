@@ -2242,6 +2242,7 @@ Your opinion matters!</string>
   <string name="WndSettings_ActionButtonSize">Action buttons size</string>
   <string name="WndSettings_Handedness">Handedness</string>
   <string name="WndSettings_InGameUiSettings">Ui settings</string>
+    <string name="WndSettings_TilemapModeSettings">Graphics View</string>
   <string name="WndSettings_GameplaySettings">Gameplay</string>
   <string name="WndPremiumSettings_marble">marble</string>
   <string name="QuickSlot_SelectSlot">Select quick slot for it</string>
@@ -2895,6 +2896,7 @@ No, there was no place for her in the light, not anymore. She turned from the me
   <string name="WndTilesKind_text">You\'re about to enter a Dungeon possessed by twisted magic, yet you now would choose how do you see it:\n Do you like it to be in modern pseudo 3d or classic flat view?\nYou will be able to change it later in game options menu.</string>
   <string name="WndTilesKind_NewLook">New Look</string>
   <string name="WndTilesKind_ClassicLook">Classic look</string>
+    <string name="WndTilesKind_IsometricLook">Isometric look</string>
   <string name="MobAi_status">This %1$s is %2$s</string>
   <string name="WndCustomizations_Title">Customizations</string>
   <string name="IceGuardianCore_DieInfo">It is so cold here, I better go back to level 14 and try to find a way to a warmer place.</string>

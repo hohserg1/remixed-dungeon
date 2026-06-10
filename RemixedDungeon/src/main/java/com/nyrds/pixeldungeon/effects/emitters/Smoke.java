@@ -4,6 +4,7 @@ import com.watabou.noosa.particles.Emitter;
 import com.watabou.noosa.particles.PixelParticle;
 import com.watabou.pixeldungeon.Dungeon;
 import com.watabou.pixeldungeon.DungeonTilemap;
+import com.watabou.pixeldungeon.scenes.GameScene;
 import com.watabou.utils.PointF;
 import com.watabou.utils.Random;
 
@@ -25,7 +26,7 @@ public class Smoke extends Emitter {
 
         this.pos = pos;
 
-        PointF p = DungeonTilemap.tileCenterToWorld( pos );
+        PointF p = GameScene.getBaseTiles().tileCenterToWorld(pos);
         pos( p.x - 4, p.y - 2, 4, 0 );
 
         pour( factory, 0.2f );

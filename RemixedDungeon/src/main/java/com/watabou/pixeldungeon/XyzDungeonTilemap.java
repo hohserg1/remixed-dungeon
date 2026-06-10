@@ -27,8 +27,6 @@ public class XyzDungeonTilemap extends DungeonTilemap {
     private final Tilemap mCornersLayer;
     private final Tilemap mDoorsLayer;
 
-    private final Level level;
-
     private final int[] mWallsMap;
     private final int[] mDecoMap;
     private final int[] mRoofMap;
@@ -274,46 +272,6 @@ public class XyzDungeonTilemap extends DungeonTilemap {
         return random.oneOf(cell,wallVerticalCrossSolidTiles);
     }
 
-    boolean isAnyWallCell(int cell) {
-        if(!level.cellValid(cell)) {
-            return true;
-        }
-
-        if (!level.mapped[cell]) {
-            return true;
-        }
-
-        return isSpWallCell(cell) || isWallCell(cell);
-    }
-
-    boolean isSpWallCell(int cell) {
-        if (!level.cellValid(cell)) {
-            return true;
-        }
-
-        switch (level.map[cell]) {
-            case Terrain.BOOKSHELF:
-            case Terrain.SECRET_DOOR:
-                return true;
-        }
-
-        return false;
-    }
-    
-    boolean isWallCell(int cell) {
-        if (!level.cellValid(cell)) {
-            return true;
-        }
-
-        switch (level.map[cell]) {
-            case Terrain.WALL:
-            case Terrain.WALL_DECO:
-            case Terrain.SECRET_DOOR:
-                return true;
-        }
-        return false;
-    }
-
 
     private final Integer[] roofNTiles = {11, 27};
     private final Integer[] roofNTilesRight = {9, 25};
@@ -434,20 +392,6 @@ public class XyzDungeonTilemap extends DungeonTilemap {
             return 12;
         }
         return TRANSPARENT;
-    }
-
-    private boolean isDoorCell(int cell) {
-        if(!level.cellValid(cell)) {
-            return false;
-        }
-
-        switch (level.map[cell]) {
-            case Terrain.DOOR:
-            case Terrain.OPEN_DOOR:
-            case Terrain.LOCKED_DOOR:
-                return true;
-        }
-        return false;
     }
 
     private int currentDoorsCell(int cell) {

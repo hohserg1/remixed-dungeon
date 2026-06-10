@@ -111,8 +111,8 @@ public class ZapEffect {
 
     private static void attachMissileTweener(Visual target, int from, int to) {
 
-        target.point( DungeonTilemap.tileToWorld( from ) );
-        PointF dest = DungeonTilemap.tileToWorld( to );
+        target.point( GameScene.getBaseTiles().tileToWorld( from ) );
+        PointF dest = GameScene.getBaseTiles().tileToWorld( to );
 
         PointF d = PointF.diff( dest, target.point() );
         target.speed.set( d ).normalize().scale(SPEED );

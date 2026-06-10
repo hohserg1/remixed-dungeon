@@ -33,10 +33,7 @@ import com.nyrds.util.ModdingBase;
 import com.nyrds.util.ModdingMode;
 import com.nyrds.util.Util;
 import com.watabou.noosa.Scene;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Bones;
-import com.watabou.pixeldungeon.Challenges;
-import com.watabou.pixeldungeon.Dungeon;
+import com.watabou.pixeldungeon.*;
 import com.watabou.pixeldungeon.actors.Actor;
 import com.watabou.pixeldungeon.actors.Char;
 import com.watabou.pixeldungeon.actors.RespawnerActor;
@@ -814,7 +811,7 @@ public abstract class Level implements Bundlable {
 
 	public String getTilesTex() {
 
-		if(Dungeon.isIsometricMode()) {
+        if (Dungeon.getPreferredTilemapMode() == TilemapMode._2_5D) {
 			return tilesTexXyz();
 		}
 

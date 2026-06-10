@@ -24,14 +24,14 @@ public class Tilemap extends Visual {
 
 	@NotNull
 	@Getter
-	private final TextureFilm tileset;
+    protected final TextureFilm tileset;
 
 	protected int[] data;
 	protected int   mapWidth;
 	protected int   size;
 
-	private final float cellW;
-	private final float cellH;
+    protected final float cellW;
+    protected final float cellH;
 
 	protected final float[]     vertices;
 	protected FloatBuffer quads;
